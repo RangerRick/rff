@@ -1,0 +1,40 @@
+@import 'base.css';
+
+::selection {
+    @apply text-white bg-blue-500;
+}
+
+body {
+    @apply text-gray-700;
+}
+
+#app {
+    @apply flex isolate overflow-y-auto overflow-x-hidden relative flex-col min-h-screen max-h-screen bg-gray-50 shadow-md;
+}
+
+div,
+header,
+footer,
+section,
+article,
+nav,
+aside,
+form {
+    @apply flex flex-col;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    @apply block w-full rounded-md border border-gray-200 shadow-sm transition-colors placeholder:text-gray-400 placeholder:font-light placeholder:focus:text-blue-400 focus:ring-0 focus:border-blue-400 focus:text-blue-700;
+}
+
+button,
+.button {
+    @apply px-5 py-2 text-center text-white bg-blue-500 rounded shadow-md transition-colors hover:bg-blue-600;
+}
+
+button.secondary,
+.button.secondary {
+    @apply font-light text-center text-gray-700 bg-gray-200 shadow-sm hover:bg-gray-300;
+}
